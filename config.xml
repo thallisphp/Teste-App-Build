@@ -8,6 +8,14 @@
     <!-- versionCode is optional and Android only -->
 
     <name>Teste App</name>
+	
+	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/notification"/>
+	<access origin="http://webpicsites.com.br" subdomains="true" />
+	<preference name="stay-in-webview" value="true" />
+	<preference name="fullscreen" value="true" />
+	<preference name="target-device" value="universal" />
+	<preference name="orientation" value="default" />
 
     <description>
         Descrição de teste
