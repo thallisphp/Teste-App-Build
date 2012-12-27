@@ -1,19 +1,38 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>Documento sem t&iacute;tulo</title>
-<link href="css.css" rel="stylesheet" type="text/css"></head>
+    <meta charset="UTF-8">
+    <title>Teste Coffe+LESS</title>
 
+    <link rel="stylesheet/less" href="less/estilo.less" type="text/css">
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="coffee-script.js"></script>
+    <script type="text/javascript" src="less.js"></script>
+
+    <script type="text/coffeescript" src="coffee/app.coffee"></script>
+</head>
 <body>
-	<div id="wrapper">
-        <header>
-            <h1>Minha App</h1>
-        </header>
-        <article>
-            <p>Hello world</p>
-            <iframe src="http://webpicsites.com.br" width="100%" height="300" frameborder="0"></iframe>
-        </article>
-    </div>
+    <!--
+    (header>h1{Teste})+(nav>ul>li*5>a{Teste $})+(article>p{Teste})+(footer>p{Teste 2})
+    -->
+    <header>
+        <h1>Teste</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Teste 1</a></li>
+            <li><a href="">Teste 2</a></li>
+            <li><a href="">Teste 3</a></li>
+            <li><a href="">Teste 4</a></li>
+            <li><a href="">Teste 5</a></li>
+        </ul>
+    </nav>
+    <article>
+        <p>Teste</p>
+    </article>
+    <footer>
+        <p>Teste 2</p>
+    </footer>
 </body>
 </html>
