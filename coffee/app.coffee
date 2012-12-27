@@ -1,8 +1,9 @@
 contar = (atual, elemento, maximo = 10) ->
-    console?.log? "contar (#{atual} < #{maximo})"
-    if atual < maximo
+    # console?.log? "contar (#{atual} < #{maximo})"
+    # console?.log? $ elemento
+    if atual <= maximo
         setTimeout ->
-            elemento.html atual
+            elemento.width "#{atual}%"
             contar atual+1, elemento, maximo
         ,500
 
@@ -14,10 +15,10 @@ redirecionar = ->
 $ ->
     setTimeout ->
         header = $ 'header h1'
-        article = $ 'article'
+        elemento = $ '#progresso'
         
         header.append ' CoffeScript funcionando'
         
-        contar 0, article, 10
+        contar 0, elemento, 100
 
     ,2000
